@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'bebas';
+    src: url('../fontes/BebasNeue-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'vougue' ;
+    src: url('../fontes/Vogue.ttf') format('truetype');
+}
+
+:root{
+    --cor01: #f5f1e8;
+    --cor02: #f5f1e8;
+    --cor03: #ad9a6f;
+    --cor04: #776a6a;
+    --cor05: #443838;
+
+    --font-destaque: 'bebas';
+    --font-elegante: 'vougue'
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: var(--cor01);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    height: 180px;
+    color: white;
+}
+header h1{
+   text-align: center;
+   padding: 30px 0px 0px 0px;
+   font-size: 3em;
+   font-family: var(--font-destaque), sans-serif;
+   font-weight: normal;
+}
+header p{
+    max-width: 300px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+}
+nav{
+    background-color: var(--cor05);
+    padding: 15px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.267);
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    
+}
+nav a:hover{
+    background-color: var(--cor02);
+    border-radius: 10px;
+}
+main{
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.301);
+    border-radius: 0px 0px 10px 10px;
+}
+main img{
+    width: 50%;
+    border-radius: 10px;
+}
+#img{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+} 
+#perfil{
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0px 10px 0px;
+    background-color: var(--cor05);
+    border-radius: 10px;
+}
+aside{
+    background-color:var(--cor02);
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 20px;
+}
+aside h2 {
+    background-color: var(--cor04);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    color: var(--cor01);
+    margin-top: 20px;
+}
+aside ul{
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    font-size: 1.2em;
+    padding: 15px;  
+}
+aside li{   
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+aside a{
+    text-decoration: none;
+    color: var(--cor05);
+    font-weight: bold;
+}
+aside a:hover{
+    text-decoration: underline;
+    background-color: var(--cor04);
+    color: var(--cor02);
+}
+main h1{
+    padding: 10px;
+    font-size: 3em; 
+    color: var(--cor05);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-family: var(--font-elegante);
+    font-weight: normal;
+}
+main h2{
+    font-size: 2em;
+    padding: 10px
+}
+main p{
+    padding: 7px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+article h2{
+    margin-top: 10px;
+    font-size: 2em;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+article p {
+    font-size: 1.2em;
+}
+article img{
+    display: block;
+    margin: auto;
+    padding: 30px 0px 0px 0px;
+    min-width: 400px;
+}
+.rodape{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.rodape a {
+    text-decoration: none;
+    color: var(--cor05);
+}
+.rodape a:hover{
+    text-decoration: underline;
+    background-color: var(--cor05);
+    color: var(--cor02);
+    transition-duration: 0.5s;
+}
+
+footer{
+    background-color: var(--cor05);
+    padding: 5px;
+    text-align: center;
+    color: var(--cor01);
+    margin-top: 20px;
+}
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Style>
+        body{ 
+            background-color: beige;
+        }
+    </Style>
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simpliesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    
+
+    <h1>Reproduzindo audios </h1>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/salmoteste.mp3" type="audio/mpeg">
+        <source src="midia/salmoteste.ogg" type="audio/ogg">
+        <source src="midia/salmoteste.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
+        <a href="midia/salmoteste.mp3" target="_self"
+        type="download">Clique aqui para baixer o Arquivo MP3</a>
+    </audio>
+
+    <h1>Reproduzindo Vídeos</h1>
+    
+    <h2><ins>Hospedagem local</ins></h2>
+
+    <video width="560" poster="imagens/tumbler.png" preload="metadata" controls loop> 
+        <source src="midia/vidareluz.mp4" type="video/mp4" >
+    </video>
+    <h2>Hospedagem no youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HwAS9ucrJN4?si=vbRI_Be1b6u3GJbV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>teste</h1>
+    
+    <p>Para acessar a pagina branca clique <a href="pag002.html" target="_self" rel="next">AQUI</a></p>
+</body>
+</html>

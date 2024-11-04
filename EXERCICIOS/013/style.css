@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'autography' ;
+    src: url('fonts/Autography.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #a7f5be, #4ad373);
+}
+main{
+    background-color: white;
+    width: 800px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 2px 5px 15px #386F49 ;
+}
+.principal{
+       background-color:#386F49;
+       border-radius: 20px;
+       color: white; 
+       text-align: center;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 3em;
+       box-shadow: 2px 5px 10px #386f4980 ;
+}
+.secundario{
+    color:#4e9b65;
+    text-decoration: underline;
+    
+}
+.basico{
+ color: #64cc83;
+ font-weight: bolder;
+}
+.Intermediario{
+    color: #FFE582;
+    font-weight: bolder;
+}
+.avancado{
+    color: #FF8382;
+    font-weight: bolder;
+}
+.avancado:hover{
+    background-color: aliceblue;
+}

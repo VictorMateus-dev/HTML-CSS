@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DIV</title>
+   <style>
+
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+    }
+    div > p{
+        display: none;
+    }
+    div:hover > p{
+        display: block;
+    }   
+    div#d4:hover{
+        color: #ffffff;
+       background-color: black ;
+       width: 400px;
+    }
+    div.d1{
+        display: inline-block;
+        background-color: lightgray;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;       
+    }
+    div.d1:hover{
+        background-color: rgb(160, 160, 160);
+    }
+   </style>
+</head>
+<body>
+    <div class="d1">01</div>
+    <div class="d1">02</div>
+    <div class="d1">03</div>
+    <h1>Site Escondido</h1>
+    <P>Para achar o texto escondido use o mouse</P>
+    <div id="d4">Passe o mouse
+        <p>Você encontrou o texto parabens</p>
+    </div>
+</body>
+</html>
