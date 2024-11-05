@@ -30,7 +30,7 @@ body{
 }
 header{
     background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
-    height: 190px;
+    
     color: white;
 }
 header h1{
